@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 1. Sleek Mobile Sidebar Navigation Toggle
     const mobileToggle = document.querySelector('.mobile-toggle');
+    const closeSidebarBtn = document.querySelector('.close-sidebar');
     const navMenu = document.querySelector('.nav-menu');
     const navOverlay = document.querySelector('.nav-overlay');
     const navLinks = document.querySelectorAll('.nav-menu a');
@@ -13,28 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
         navOverlay.classList.toggle('active');
         const isExpanded = navMenu.classList.contains('active');
         mobileToggle.setAttribute('aria-expanded', isExpanded);
-        
-        // Change icon with animation
-        const icon = mobileToggle.querySelector('i');
-        if (icon) {
-            icon.style.transform = 'rotate(90deg)';
-            icon.style.opacity = '0';
-            setTimeout(() => {
-                if(isExpanded) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-                icon.style.transform = 'rotate(0deg)';
-                icon.style.opacity = '1';
-            }, 150);
-        }
     }
 
     if (mobileToggle) {
         mobileToggle.addEventListener('click', toggleSidebar);
+    }
+
+    if (closeSidebarBtn) {
+        closeSidebarBtn.addEventListener('click', toggleSidebar);
     }
     
     if (navOverlay) {

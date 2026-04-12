@@ -826,8 +826,8 @@ h1, h2, h3, h4 {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 85%;
-        max-width: 380px;
+        width: 70%;
+        max-width: 250px;
         height: 100vh;
         background: var(--glass-bg);
         backdrop-filter: blur(25px);
@@ -840,6 +840,23 @@ h1, h2, h3, h4 {
         padding: 50px 30px;
         transition: right 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         z-index: 1001;
+    }
+
+    .close-sidebar {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: transparent;
+        border: none;
+        color: var(--text-muted);
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .close-sidebar:hover {
+        color: var(--gold);
+        transform: scale(1.1) rotate(90deg);
     }
 
     .nav-menu.active {
