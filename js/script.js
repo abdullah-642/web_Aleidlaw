@@ -1,8 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Sidebar Mobile Navigation Removed
+    // 1. Sleek Mobile Sidebar Navigation Toggle
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navOverlay = document.querySelector('.nav-overlay');
+    const navLinks = document.querySelectorAll('.nav-menu a');
 
+    function toggleSidebar() {
+        if (!navMenu || !navOverlay || !mobileToggle) return;
+        
+        navMenu.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+        const isExpanded = navMenu.classList.contains('active');
+        mobileToggle.setAttribute('aria-expanded', isExpanded);
+        
+        // Change icon with animation
+        const icon = mobileToggle.querySelector('i');
+        if (icon) {
+            icon.style.transform = 'rotate(90deg)';
+            icon.style.opacity = '0';
+            setTimeout(() => {
+                if(isExpanded) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+                icon.style.transform = 'rotate(0deg)';
+                icon.style.opacity = '1';
+            }, 150);
+        }
+    }
 
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', toggleSidebar);
+    }
+    
+    if (navOverlay) {
+        navOverlay.addEventListener('click', toggleSidebar);
+    }
+
+    // Close menu when clicking a link
+    if (navLinks.length > 0) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu && navMenu.classList.contains('active')) {
+                    toggleSidebar();
+                }
+            });
+        });
+    }
     // 2. Header Scroll Effect
     const header = document.querySelector('.header');
     

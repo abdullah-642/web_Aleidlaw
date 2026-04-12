@@ -14,7 +14,7 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/style.css?v=9">
+    <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
 
@@ -36,17 +36,20 @@
                 </ul>
             </nav>
 
-            <div class="nav-actions">
                 <button class="theme-toggle animated-theme-switch" id="themeToggle" aria-label="تبديل المظهر">
                     <i class="fas fa-sun sun-icon"></i>
                     <i class="fas fa-moon moon-icon"></i>
                 </button>
                 <a href="https://wa.me/966599959111" class="btn primary-btn" target="_blank" rel="noopener noreferrer">احجز استشارة</a>
+                <button class="mobile-toggle" aria-label="القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Nav Overlay Removed -->
+    <!-- Navigation Overlay (Mobile) -->
+    <div class="nav-overlay"></div>
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg"></div>
