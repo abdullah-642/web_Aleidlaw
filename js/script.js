@@ -55,15 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // 6. Theme Toggle Logic
     const themeToggleBtn = document.getElementById('themeToggle');
-    const themeIcon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
     
     // Default theme check
     const currentTheme = localStorage.getItem('theme') || 'light';
     if(currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
-        if(themeIcon) {
-            themeIcon.classList.replace('fa-moon', 'fa-sun');
-        }
     }
 
     if (themeToggleBtn) {
@@ -72,11 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (theme === 'dark') {
                 document.documentElement.removeAttribute('data-theme');
                 localStorage.setItem('theme', 'light');
-                themeIcon.classList.replace('fa-sun', 'fa-moon');
             } else {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 localStorage.setItem('theme', 'dark');
-                themeIcon.classList.replace('fa-moon', 'fa-sun');
             }
         });
     }
