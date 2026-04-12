@@ -270,6 +270,11 @@ h1, h2, h3, h4 {
 .nav-menu ul {
     display: flex;
     gap: 30px;
+    align-items: center;
+}
+
+.close-sidebar, .mobile-icon {
+    display: none !important;
 }
 
 .nav-menu a {
@@ -843,6 +848,7 @@ h1, h2, h3, h4 {
     }
 
     .close-sidebar {
+        display: block !important;
         position: absolute;
         top: 20px;
         left: 20px;
@@ -895,7 +901,7 @@ h1, h2, h3, h4 {
         padding: 10px 0;
         position: relative;
     }
-    
+
     .nav-menu ul a:hover, .nav-menu ul a.active {
         color: var(--gold);
         transform: translateX(-10px); /* Arabic RTL translates left on hover */
