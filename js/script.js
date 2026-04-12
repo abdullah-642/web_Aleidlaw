@@ -1,44 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Mobile Navigation Toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    const navOverlay = document.querySelector('.nav-overlay');
-    const navLinks = document.querySelectorAll('.nav-menu a');
+    // Sidebar Mobile Navigation Removed
 
-    function toggleMenu() {
-        navMenu.classList.toggle('active');
-        navOverlay.classList.toggle('active');
-        const isExpanded = navMenu.classList.contains('active');
-        mobileToggle.setAttribute('aria-expanded', isExpanded);
-        
-        // Change icon
-        const icon = mobileToggle.querySelector('i');
-        if(isExpanded) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-    }
-
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', toggleMenu);
-    }
-    
-    if (navOverlay) {
-        navOverlay.addEventListener('click', toggleMenu);
-    }
-
-    // Close menu when clicking a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (navMenu.classList.contains('active')) {
-                toggleMenu();
-            }
-        });
-    });
 
     // 2. Header Scroll Effect
     const header = document.querySelector('.header');
