@@ -803,6 +803,7 @@ h1, h2, h3, h4 {
     .header-container {
         position: relative;
         justify-content: center;
+        min-height: 90px; /* Prevent header collapse when items are absolute */
     }
     
     .nav-actions {
