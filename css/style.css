@@ -800,6 +800,28 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 900px) {
+    .header-container {
+        position: relative;
+        justify-content: center;
+    }
+    
+    .nav-actions {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        flex-direction: row-reverse; /* Puts first element (Sun) on Left in RTL */
+        padding: 0 15px;
+        pointer-events: none; /* Let clicks pass through empty space */
+    }
+
+    .nav-actions > * {
+        pointer-events: auto; /* Re-enable clicks on buttons */
+        margin: 0 !important;
+    }
+
     .nav-menu {
         position: fixed;
         top: 0;
