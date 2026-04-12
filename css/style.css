@@ -225,7 +225,7 @@ h1, h2, h3, h4 {
    Header & Navigation
    ========================================================================== */
 .header {
-    background-color: transparent;
+    background-color: var(--secondary-dark);
     position: fixed;
     top: 0;
     left: 0;
@@ -234,6 +234,7 @@ h1, h2, h3, h4 {
     box-shadow: var(--shadow);
     transition: var(--transition);
     padding: 15px 0;
+    border-bottom: 1px solid var(--glass-border);
 }
 
 .header.scrolled {
