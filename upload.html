@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>رفع شعار الموقع</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .upload-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h2 { color: #16324b; }
+        input[type="file"] {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            width: 90%;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ba9553;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        button:hover { background-color: #16324b; }
+    </style>
+</head>
+<body>
+    <div class="upload-box">
+        <h2>أداة رفع الشعار لموقع العيد للمحاماة</h2>
+        <p>الرجاء اختيار صورة الشعار من جهازك للقيام برفعها وتثبيتها فوراً في الموقع!</p>
+        <form action="/upload_logo" method="post" enctype="multipart/form-data">
+            <input type="file" name="logo" accept="image/*" required>
+            <br>
+            <button type="submit">رفع وتثبيت الشعار 🚀</button>
+        </form>
+    </div>
+</body>
+</html>
