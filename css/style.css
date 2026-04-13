@@ -1047,7 +1047,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
     html {
-        font-size: 19px; /* Slightly smaller base scale on mobile, but still larger than default */
+        font-size: 16px; /* Return to standard scaling for tablets/small laptops so UI doesn't blow up */
     }
     
     .nav-actions .primary-btn {
@@ -1070,6 +1070,10 @@ h1, h2, h3, h4 {
 
 /* Comprehensive Mobile Overrides for Phones (< 576px) */
 @media (max-width: 576px) {
+    html {
+        font-size: 14px !important; /* Force downscale of entire UI to fit small mobile screens perfectly */
+    }
+    
     html, body {
         overflow-x: hidden !important; /* Prevent horizontal scrolling */
         width: 100%;
