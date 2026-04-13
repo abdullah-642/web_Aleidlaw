@@ -693,13 +693,13 @@ h1, h2, h3, h4 {
 .partners-track {
     display: flex;
     direction: ltr; /* Force LTR for seamless marquee math */
-    width: calc(250px * 18); /* 9 original + 9 duplicate */
-    animation: scroll-partners 45s linear infinite;
+    width: calc(200px * 18); /* 9 original + 9 duplicate */
+    animation: scroll-partners 25s linear infinite;
 }
 
 .partner-logo {
-    min-width: 250px;
-    padding: 20px;
+    min-width: 200px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
