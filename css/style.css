@@ -11,8 +11,8 @@
     --text-main: #16324b;
     --text-muted: #64748b;
     --bg-light: #ffffff;        
-    --font-text: 'Traditional Arabic', 'Arabic Typesetting', 'Amiri', serif;
-    --font-heading: 'Traditional Arabic', 'Arabic Typesetting', 'Amiri', serif;
+    --font-text: 'Tajawal', sans-serif;
+    --font-heading: 'Tajawal', sans-serif;
     --transition: all 0.3s ease;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     --glass-bg: rgba(255, 255, 255, 0.7);
@@ -41,7 +41,6 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 22px; /* Scale up entire UI to compensate for Traditional Arabic's naturally small rendering size */
 }
 
 body {
@@ -1046,9 +1045,6 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
-    html {
-        font-size: 16px; /* Return to standard scaling for tablets/small laptops so UI doesn't blow up */
-    }
     
     .nav-actions .primary-btn {
         display: none; 
@@ -1070,10 +1066,6 @@ h1, h2, h3, h4 {
 
 /* Comprehensive Mobile Overrides for Phones (< 576px) */
 @media (max-width: 576px) {
-    html {
-        font-size: 14px !important; /* Force downscale of entire UI to fit small mobile screens perfectly */
-    }
-    
     html, body {
         overflow-x: hidden !important; /* Prevent horizontal scrolling */
         width: 100%;
