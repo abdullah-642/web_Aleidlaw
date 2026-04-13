@@ -11,8 +11,8 @@
     --text-main: #16324b;
     --text-muted: #64748b;
     --bg-light: #ffffff;        
-    --font-text: 'Tajawal', sans-serif;
-    --font-heading: 'Cairo', sans-serif;
+    --font-text: 'Arabic Typesetting', 'Traditional Arabic', serif;
+    --font-heading: 'Arabic Typesetting', 'Traditional Arabic', serif;
     --transition: all 0.3s ease;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     --glass-bg: rgba(255, 255, 255, 0.7);
@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    font-family: 'Tajawal', sans-serif;
+    font-family: var(--font-text);
     color: var(--text-main);
     background-color: var(--primary-dark);
     line-height: 1.6;
