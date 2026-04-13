@@ -133,7 +133,7 @@ h1, h2, h3, h4 {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     color: var(--text-main);
     margin-bottom: 2rem;
     position: relative;
@@ -426,7 +426,7 @@ h1, h2, h3, h4 {
 }
 
 .hero-content h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -804,7 +804,7 @@ h1, h2, h3, h4 {
    Responsive Design (Mobile & Tablet)
    ========================================================================== */
 @media (max-width: 992px) {
-    .hero-content h2 { font-size: 2.8rem; }
+    .hero-content h2 { font-size: 4rem; }
     .about-container { grid-template-columns: 1fr; }
     .about-image { grid-row: 1; }
     .contact-grid { grid-template-columns: 1fr; }
@@ -963,7 +963,7 @@ h1, h2, h3, h4 {
         display: none; 
     }
 
-    .hero-content h2 { font-size: 2.2rem; }
+    .hero-content h2 { font-size: 3rem; }
     .hero { padding-top: 100px; text-align: center; }
     .hero-buttons { justify-content: center; }
     
@@ -995,7 +995,7 @@ h1, h2, h3, h4 {
     }
 
     .hero-content h2 {
-        font-size: 1.6rem !important; /* Smaller title */
+        font-size: 2.4rem !important; /* Smaller title */
         line-height: 1.5 !important;
     }
 
@@ -1019,7 +1019,7 @@ h1, h2, h3, h4 {
     }
 
     .section-title {
-        font-size: 1.6rem !important;
+        font-size: 2.3rem !important;
     }
 
     .services-grid, .stats-grid, .about-container, .footer-container {
