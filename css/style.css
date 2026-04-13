@@ -41,6 +41,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 22px; /* Scale up entire UI to compensate for Traditional Arabic's naturally small rendering size */
 }
 
 body {
@@ -954,6 +955,10 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 19px; /* Slightly smaller base scale on mobile, but still larger than default */
+    }
+    
     .nav-actions .primary-btn {
         display: none; 
     }
