@@ -661,6 +661,7 @@ h1, h2, h3, h4 {
     overflow: hidden;
     position: relative;
     padding: 20px 0;
+    direction: ltr; /* Force LTR on the wrapper to fix anchor calculation */
 }
 
 .partners-slider-wrapper::before,
@@ -692,7 +693,6 @@ h1, h2, h3, h4 {
 
 .partners-track {
     display: flex;
-    direction: ltr; /* Force LTR for seamless marquee math */
     width: calc(200px * 18); /* 9 original + 9 duplicate */
     animation: scroll-partners 25s linear infinite;
 }
