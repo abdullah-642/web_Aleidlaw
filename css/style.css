@@ -1054,7 +1054,7 @@ h1, h2, h3, h4 {
         display: none; 
     }
 
-    .hero-content h2 { font-size: 2.6rem; }
+    .hero-content h2 { font-size: 2.1rem; }
     .hero { padding-top: 100px; text-align: center; }
     .hero-buttons { justify-content: center; }
     
@@ -1086,12 +1086,12 @@ h1, h2, h3, h4 {
     }
 
     .hero-content h2 {
-        font-size: 2.4rem !important; /* Smaller title */
-        line-height: 1.5 !important;
+        font-size: 1.8rem !important; /* Smaller title */
+        line-height: 1.4 !important;
     }
 
     .hero-content p {
-        font-size: 1rem !important; /* Override inline 1.3rem */
+        font-size: 1.1rem !important; /* Proper text balance */
         padding: 0 5px;
     }
 
