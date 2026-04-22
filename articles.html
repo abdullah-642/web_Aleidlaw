@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+    <title>المقالات والمدونة القانونية | مكتب العيد للمحاماة - أفضل محامي في السعودية</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="اقرأ أحدث المقالات والإجابات على الأسئلة الشائعة في النظام السعودي. مكتب العيد للمحاماة يقدم دليلاً قانونياً لـ الفصل التعسفي، تأسيس الشركات، والدعاوى التجارية.">
+    <meta name="keywords" content="مقالات قانونية, أسئلة شائعة قانونية, الفصل التعسفي, تأسيس شركة في السعودية, كيفية رفع دعوى, محامي استشارات, مكتب محاماة, المدونة القانونية">
+    <meta name="author" content="مكتب العيد للمحاماة">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://aleidlaw.abdulrhman.net/articles.html">
+    <meta property="og:title" content="المدونة والمقالات القانونية | أفضل محامي في السعودية">
+    <meta property="og:description" content="دليل قانوني وإجابات شاملة لأهم الأسئلة المتكررة حول القضايا التجارية والعمالية وتأسيس الشركات.">
+    <meta property="og:image" content="https://aleidlaw.abdulrhman.net/assets/images/logo.jpg">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://aleidlaw.abdulrhman.net/articles.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css?v=35">
+
+    <style>
+        .blog-hero {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(8, 15, 30, 0.95), rgba(15, 23, 42, 0.95)), url('assets/images/about-final.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .blog-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .blog-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #cbd5e1;
+        }
+
+        .articles-container {
+            padding: 60px 0;
+            background-color: var(--bg-color, #f8fafc);
+        }
+
+        .article-card {
+            background: var(--card-bg, #ffffff);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        html[data-theme="dark"] .article-card {
+            background: #1e293b;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 40px;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            color: var(--text-color, #0f172a);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        html[data-theme="dark"] .article-title {
+            color: #f8fafc;
+        }
+
+        /* FAQ Content styling inside article */
+        .faq-section {
+            margin-top: 25px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 15px;
+        }
+
+        html[data-theme="dark"] .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .faq-question {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color, #1e3a8a);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-question i {
+            color: #d4af37;
+            font-size: 1rem;
+        }
+
+        html[data-theme="dark"] .faq-question {
+            color: #60a5fa;
+        }
+
+        .faq-answer {
+            color: var(--text-muted, #475569);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        html[data-theme="dark"] .faq-answer {
+            color: #94a3b8;
+        }
+
+        @media (min-width: 992px) {
+            .article-card {
+                flex-direction: row;
+                align-items: stretch;
+            }
+            .article-image {
+                width: 40%;
+                height: auto;
+                min-height: 400px;
+            }
+            .article-content {
+                width: 60%;
+            }
+            /* Alternate layout for reading flow */
+            .article-card:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.jpg?v=2" alt="مكتب العيد للمحاماة - أفضل محامي" style="max-height: 90px; width: auto; object-fit: contain;">
+                </a>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="close-sidebar" aria-label="إغلاق القائمة">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html#home"><i class="fas fa-home mobile-icon"></i>الرئيسية</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-info-circle mobile-icon"></i>من نحن</a></li>
+                    <li><a href="index.html#services"><i class="fas fa-gavel mobile-icon"></i>خدماتنا</a></li>
+                    <li><a href="articles.html" class="active" style="color: #d4af37;"><i class="fas fa-book-open mobile-icon"></i>المقالات</a></li>
+                    <li><a href="index.html#partners"><i class="fas fa-handshake mobile-icon"></i>شركاء النجاح</a></li>
+                    <li><a href="index.html#office"><i class="fas fa-building mobile-icon"></i>مقرنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle animated-theme-switch" id="themeToggle" aria-label="تبديل المظهر">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                <a href="https://wa.me/966599959111" class="btn primary-btn" target="_blank" rel="noopener noreferrer">احجز استشارة</a>
+                <button class="mobile-toggle" aria-label="القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay (Mobile) -->
+    <div class="nav-overlay"></div>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>المقالات والأسئلة الشائعة</h1>
+            <p>دليلك القانوني الشامل، نجيب فيه عن أبرز الأسئلة المتداولة لتكون على دراية تامة بحقوقك وواجباتك القانونية في السعودية.</p>
+
+            <!-- Article 4 -->
+            <article class="article-card scroll-reveal" style="margin-top: 50px;">
+                <img src="assets/images/articles/family_law_seo.png" alt="الخلع في قانون الأحوال الشخصية السعودي" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الأحوال الشخصية</span>
+                    <h2 class="article-title">كل ما تريد معرفته عن دعوى الخلع في السعودية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو الخلع وكيف يتم؟</h3>
+                            <p class="faq-answer">الخلع هو طلب الزوجة إنهاء العلاقة الزوجية مقابل إعادة المهر (العوض) للزوج. يتم بتراضي الطرفين أو عبر رفع دعوى فسخ نكاح بعوض أمام محكمة الأحوال الشخصية إذا رفض الزوج.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يحق للزوجة طلب الخلع دون سبب مقنع؟</h3>
+                            <p class="faq-answer">نعم، يحق للزوجة طلب الخلع إذا استحالت العشرة وبغضت البقاء مع الزوج حتى لو لم يكن هناك تقصير منه، بشرط إرجاع المهر وفقاً لنظام الأحوال الشخصية الجديد.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/family_law_seo.png" alt="חضانة الأطفال بعد الطلاق" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الأحوال الشخصية</span>
+                    <h2 class="article-title">حق الحضانة للأبناء بعد الطلاق: الشروط ولمن تؤول؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> لمن تكون الحضانة بعد الطلاق؟</h3>
+                            <p class="faq-answer">بحسب النظام، تكون الحضانة للأم في المقام الأول ما لم يثبت عدم أهليتها، ثم تؤول للأب، والهدف دائماً هو تحقيق "المصلحة الفضلى للمحضون".</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يخير الطفل بين والديه؟</h3>
+                            <p class="faq-answer">يُخير الطفل بين والديه عند بلوغه سن الخامسة عشرة، ويكون له حق تقرير من يعيش معه، بشرط توفر الأهلية في الحاضن المختار.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/real_estate_seo.png" alt="إخلاء العقار وإنهاء الإيجار" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضايا العقارية</span>
+                    <h2 class="article-title">الدليل الشامل لقضايا إخلاء العقار والمنازعات الإيجارية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يحق للمؤجر المطالبة بإخلاء العقار؟</h3>
+                            <p class="faq-answer">يحق له ذلك في حالة عدم سداد الأجرة (بعد إنذاره)، أو استخدام العقار في أنشطة غير مشروعة، أو تأجيره من الباطن دون إذن، أو التسبب بضرر بالغ للعقار.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما أهمية عقد "إيجار" الإلكتروني الموحد؟</h3>
+                            <p class="faq-answer">عقد إيجار يعتبر سنداً تنفيذياً؛ وهذا يعني أنه في حال عدم السداد أو التأخر، يمكن للمؤجر التوجه لمحكمة التنفيذ مباشرة بدلاً من رفع دعوى طويلة أمام المحكمة العامة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/real_estate_seo.png" alt="دعوى إثبات تملك عقار" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضايا العقارية</span>
+                    <h2 class="article-title">إثبات الملكية وتحديث الصكوك العقارية القديمة</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي منصة إحكام لتملك العقارات؟</h3>
+                            <p class="faq-answer">هي لجان النظر في طلبات تملك العقارات (إحكام)، وتختص باستقبال شكاوى وطلبات المواطنين لتثبيت ملكيتهم للعقارات التي لا تحمل صكوكاً رسمية وفق الضوابط.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ماذا أفعل إذا كان هناك نزاع على ملكية عقار؟</h3>
+                            <p class="faq-answer">يجب رفع دعوى "استحقاق عقار" أمام المحكمة العامة، مدعماً فيها الأدلة كوثائق المبايعة، الإحياء المستوفي للشروط، والشهود، ويفضل دائماً الاستعانة بمحامٍ عقاري مختص.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/cyber_crime_seo.png" alt="الابتزاز الإلكتروني في السعودية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الجرائم المعلوماتية</span>
+                    <h2 class="article-title">كيف تتعامل قانونياً مع قضايا الابتزاز الإلكتروني؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي عقوبة الابتزاز الإلكتروني في السعودية؟</h3>
+                            <p class="faq-answer">يُعاقب المبتز بالسجن لمدة تصل إلى سنة، وغرامة تصل إلى 500 ألف ريال، أو بإحدى هاتين العقوبتين، مع مصادرة الأجهزة المستخدمة.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ماذا أفعل إذا تعرضت للابتزاز؟</h3>
+                            <p class="faq-answer">تجنب قطعياً الاستجابة لطلبات المبتز. احتفظ بالأدلة (محادثات، رسائل) وبلغ فوراً عبر تطبيق (كلنا أمن) أو الاتصال بالجهات الأمنية، ووكل محامياً لضمان سريتك وحفظ حقك الخاص.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/cyber_crime_seo.png" alt="التشهير الإلكتروني" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الجرائم المعلوماتية</span>
+                    <h2 class="article-title">قضايا التشهير في مواقع التواصل الاجتماعي: عقوباتها وكيفية إثباتها</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يُعتبر المنشور تشهيراً وجريمة معلوماتية؟</h3>
+                            <p class="faq-answer">كل إنتاج أو إرسال أو إعداد من شأنه المساس بالنظام العام أو القيم أو الحياة الخاصة للآخرين بالتشهير أو الإساءة يعتبر جريمة تستوجب العقاب الرادع.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل الشتم في الواتساب يعتبر جريمة معلوماتية؟</h3>
+                            <p class="faq-answer">نعم، السب والشتم في الرسائل الخاصة عبر الإنترنت يصنف كجريمة معلوماتية وعقوبتها السجن مدة لا تزيد عن سنة وبغرامة لا تزيد عن 500 ألف ريال.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/admin_law_seo.png" alt="الاحتيال المالي" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الجرائم المعلوماتية والتجارية</span>
+                    <h2 class="article-title">استرداد الأموال بعد التعرض للاحتيال المالي والنصب</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف أسترد أموالي من قضايا الاحتيال المالي (الفوركس، المنصات الوهمية)؟</h3>
+                            <p class="faq-answer">يبدأ الإجراء بإبلاغ البنك لإيقاف التحويل، ثم تقديم بلاغ رسمي لدى الشرطة الجنائية. يقوم المحامي لاحقاً بمتابعة الدعوى وطلب الحجز على حسابات النصابين لاسترداد المبالغ بعد ثبوت الإدانة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 11 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/execution_law_seo.png" alt="محكمة التنفيذ والشيكات المرتجعة" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">محكمة التنفيذ</span>
+                    <h2 class="article-title">آلية تنفيذ الشيكات المرتجعة والسندات لأمر</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو السند التنفيذي؟</h3>
+                            <p class="faq-answer">السند التنفيذي هو الوثيقة التي تُعطى قوة التنفيذ المباشر جبراً مثل الأحكام القضائية، الشيكات، والسند لأمر، ولا يتم النظر موضوعياً في الدين بل يُلزم المدين بالدفع الفوري.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يتم إيقاف الخدمات ومنع السفر؟</h3>
+                            <p class="faq-answer">إذا تبلغ المدين بأمر التنفيذ ومضت مدة 5 أيام دون السداد أو الإفصاح عن أموال تكفي للسداد، يصدر قاضي التنفيذ قرارات الحجز وإيقاف الخدمات والمنع من السفر.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 12 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/inheritance_seo.png" alt="تقسيم الميراث والتركة" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">التركات والأوقاف</span>
+                    <h2 class="article-title">خطوات تقسيم التركة والميراث وإنهاء الإجراءات المعقدة</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف يتم تقسيم التركة عند امتناع أحد الورثة؟</h3>
+                            <p class="faq-answer">في حال النزاع المادي أو امتناع أحد الورثة، تُرفع "دعوى قسمة إجبار" في محكمة الأحوال الشخصية، حيث تحصر المحكمة الأموال وتبيع العقارات بالمزاد العلني وتقسمها قسمة شرعية إجبارية.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو دور المحامي في قضايا التركات؟</h3>
+                            <p class="faq-answer">المحامي يسهل استخراج صك حصر الورثة، وفك تجميد الحسابات البنكية، وتسريع إجراءات القسمة الرضائية دون الحاجة إلى الذهاب للمحاكم بشكل مطول، مما يحافظ على العلاقات الأسرية.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 13 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/inheritance_seo.png" alt="الوصايا والأوقاف" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">التركات والأوقاف</span>
+                    <h2 class="article-title">طريقة إثبات الوصية وتأسيس الأوقاف الشرعية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل تنفذ الوصية إذا كانت أكثر من الثلث؟</h3>
+                            <p class="faq-answer">شرعاً ونظاماً، لا تنفذ الوصية بأكثر من الثلث لغير الوارث إلا بإجازة جميع الورثة المعتبرين قانونياً بعد وفاة الموصي.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف يتم توثيق الوقف المالي والذرّي؟</h3>
+                            <p class="faq-answer">يتم ذلك من خلال كتابة عدل وإصدار صك وقفية، ويُنصح بشدة بصياغة شروط الواقف والنُظّار بمساندة محامي لتفادي النزاعات المعقدة في المستقبل بين الإخوة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 14 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/admin_law_seo.png" alt="ديوان المظالم والطعن" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضاء الإداري</span>
+                    <h2 class="article-title">رفع التظلمات والطعن في القرارات الإدارية (ديوان المظالم)</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو اختصاص ديوان المظالم؟</h3>
+                            <p class="faq-answer">يختص ديوان المظالم (المحاكم الإدارية) بالنظر في الدعاوى المتعلقة بالحقوق المقررة في نظم الخدمة المدنية، والطعن في القرارات الحكومية، ودعاوى التعويض المرفوعة ضد جهات الدولة.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي المهل القانونية للتظلم الإداري؟</h3>
+                            <p class="faq-answer">يجب على المتضرر التظلم أمام الجهة الإدارية مصدرة القرار خلال 60 يوماً من تاريخ تبليغه، وإذا تم القبول أو الرفض أو التجاهل، له حق رفع الدعوى خلال 60 يوماً أخرى أمام الديوان، والمُدد هنا حاسمة جداً.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 15 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/admin_law_seo.png" alt="التعويض عن الضرر" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضاء الإداري</span>
+                    <h2 class="article-title">دعوى التعويض عن أضرار القرارات والمشاريع الحكومية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يمكن تعويضي بسبب مشروع حكومي أضر بعقاري؟</h3>
+                            <p class="faq-answer">نعم، إذا وقع نزع ملكية للعقار للمصلحة العامة، أو كان هناك ضرر مباشر غير معتاد بسبب المشاريع الحكومية، يحق لك المطالبة بالتعويض العادل أمام ديوان المظالم فور إثبات الضرر والخطأ.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 16 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/business_contract_seo.png" alt="صياغة العقود التجارية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">العقود التجارية</span>
+                    <h2 class="article-title">أهمية الصياغة القانونية الاحترافية للعقود التجارية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي عناصر العقد التجاري القوي؟</h3>
+                            <p class="faq-answer">يجب أن يتضمن العقد توصيفاً دقيقاً لالتزامات الأطراف، الشروط الجزائية، المحكمة المختصة أو التحكيم لحل النزاعات، قوانين القوة القاهرة، وآلية الفسخ.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> لماذا التوقيع على مسودة جاهزة من الإنترنت خطير؟</h3>
+                            <p class="faq-answer">المسودات الجاهزة لا تراعي الأنظمة المحدثة في السعودية ولا تدرس المخاطر الخاصة بنشاطك، وقد تجد نفسك تتحمل مبالغ ضخمة لمجرد افتقار العقد لبنود تنظيمية دقيقة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 17 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/commercial_law.png" alt="تصفية الشركات" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الشركات والأعمال</span>
+                    <h2 class="article-title">كيف تتم تصفية الشركات وإعلان الإفلاس نظامياً؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما الفرق بين التصفية الاختيارية والإفلاس؟</h3>
+                            <p class="faq-answer">التصفية الاختيارية يتخذها الشركاء باتفاقهم عند انتهاء أجل الشركة وإغلاقها بتسديد جميع ما عليها. أما الإفلاس، فيكون بحكم قضائي بعد تعثر الشركة وتراكم الديون عبر مسارات نظام الإفلاس الحديث كـ "التسوية الوقائية".</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل الشركاء مطالبون بديون الشركة؟</h3>
+                            <p class="faq-answer">في الشركة ذات المسؤولية المحدودة والشركات المساهمة، لا يُطالب الشركاء بالديون من أموالهم الخاصة، ولكن في شركة التضامن، فهم ضامنون للديون في أموالهم الخاصة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 18 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/commercial_law.png" alt="العلامات التجارية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الملكية الفكرية</span>
+                    <h2 class="article-title">حماية العلامات التجارية من السرقة والتقليد في السوق السعودي</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ماذا تفعل إذا تم تقليد علامتك التجارية؟</h3>
+                            <p class="faq-answer">يجب توثيق التقليد فوراً بشراء العينة، ثم التقدم بشكوى للجنة النظر في تظلمات العلامات التجارية أو لدى المحكمة التجارية للمطالبة بوقف التعدي وإتلاف المنتجات والتعويض المالي.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 19 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/labor_law.png" alt="مكافأة نهاية الخدمة" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">دعاوى عمالية</span>
+                    <h2 class="article-title">طريقة احتساب مكافأة نهاية الخدمة عند الاستقالة أو الإقالة</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يسقط حق الموظف في مكافأة نهاية الخدمة؟</h3>
+                            <p class="faq-answer">لا يسقط حقه إطلاقاً إلا في حالات نادرة جداً ومحددة كحالة الاستقالة قبل إتمام سنتين في العمل، حيث لا يستحق أي مكافأة وفق نظام العمل.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف تحسب المكافأة عند الاستقالة؟</h3>
+                            <p class="faq-answer">إذا كانت الخدمة بين سنتين و5 سنوات يستحق ثلث المكافأة، وإذا كانت بين 5 إلى 10 سنوات يستحق الثلثين، وما تجاوز 10 سنوات يستحقها كاملة (نصف شهر عن كل سنة من الخمس سنوات الأولى، وشهر كامل للمدة الباقية).</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 20 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/labor_law.png" alt="إصابات العمل" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">دعاوى عمالية</span>
+                    <h2 class="article-title">حقوق الموظف المادية ومعاش التعويض عند التعرض لإصابة عمل</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> من يتكفل بمصاريف العلاج في حال إصابة العمل؟</h3>
+                            <p class="faq-answer">يتكفل صاحب العمل بتقديم الإسعافات الأولية وتتكفل المؤسسة العامة للتأمينات الاجتماعية بمصاريف العلاج الطبي الكاملة لحين شفاء العامل المشترك.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يحق لي رفع دعوى ضد الشركة لتعويض إضافي؟</h3>
+                            <p class="faq-answer">نعم، يحق لك المطالبة بالتعويض أمام المحكمة العمالية إذا ثبت أن الشركة تقاعست متعمّدة أو أهملت تطبيق وسائل السلامة المهنية مما أدى لإصابتك.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 21 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/family_law_seo.png" alt="دعوى طلاق للضرر" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الأحوال الشخصية</span>
+                    <h2 class="article-title">فسخ النكاح للضرر: شروطه وإثباتاته في المحاكم</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي طرق إثبات الضرر الموجب للفسخ دون إرجاع المهر؟</h3>
+                            <p class="faq-answer">يُثبت الضرر (كالضرب، الهجر، سوء العشرة) بالتقارير الطبية، وشكاوى الشرطة، أو بشهادة الشهود. وفي حال إثبات الضرر يتم الفسخ للزوجة دون طلب إعادة المهر.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 22 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/execution_law_seo.png" alt="ديون الشركات والمؤسسات" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">المطالبات التجارية</span>
+                    <h2 class="article-title">تحصيل الديون التجارية المتأخرة للشركات: أسرع الطرق القانونية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل سندات القبض تكفي لإثبات الدين ورفعه لمحكمة التنفيذ؟</h3>
+                            <p class="faq-answer">سند القبض يعتبر قرينة قوية في المحكمة (الموضوعية) وليس ورقة تجارية تنفيذية. الأوراق التي تذهب للتنفيذ المباشر هي: الشيكات، الكمبيالات، والسندات لأمر.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 23 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/real_estate_seo.png" alt="الضريبة العقارية والتصرفات" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضايا العقارية والضريبية</span>
+                    <h2 class="article-title">متى يتم الإعفاء من ضريبة التصرفات العقارية بين الأقارب؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل الهبة للابن تخضع لضريبة التصرف العقاري 5%؟</h3>
+                            <p class="faq-answer">تُعفى ضريبة التصرفات العقارية في حالة "الهبة" بين الأقارب من الدرجة الأولى والثانية (أبناء، آباء، إخوة) بشرط إثبات ذلك وعدم وجود نية مسبقة للتهرب الضريبي عبر نقل الملكيات.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-container">
+        <div class="container">
+            
+            <!-- Article 1: Labor Law -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/labor_law.png" alt="حقوق العامل ونظام العمل السعودي" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضايا العمالية</span>
+                    <h2 class="article-title">كل ما تود معرفته عن الفصل التعسفي في نظام العمل السعودي</h2>
+                    
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو الفصل التعسفي؟</h3>
+                            <p class="faq-answer">الفصل التعسفي هو إنهاء عقد العمل من قبل صاحب العمل بدون سبب مشروع من الأسباب المنصوص عليها في المادة 80 من نظام العمل السعودي.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يحق للعامل تعويض مالي عند فصله تعسفياً؟</h3>
+                            <p class="faq-answer">نعم، إذا كان العقد غير محدد المدة، يستحق العامل أجر 15 يوماً عن كل سنة خدمة. أما إذا كان العقد محدد المدة، فيستحق أجر المدة المتبقية من العقد، بحد أدنى أجر شهرين في كلا الحالتين، ما لم ينص العقد على تعويض أعلى.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي خطوات رفع دعوى فصل تعسفي؟</h3>
+                            <p class="faq-answer">أولاً يجب التقدم بتسوية ودية عبر بوابة العمل (ودي). وفي حال عدم التوصل لصلح خلال 21 يوماً، تُحال القضية آلياً إلى المحكمة العمالية للبت فيها.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2: Commercial Law -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/commercial_law.png" alt="تأسيس الشركات والأنظمة التجارية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الشركات والقطاع التجاري</span>
+                    <h2 class="article-title">دليلك القانوني لتأسيس شركة ذات مسؤولية محدودة في السعودية</h2>
+                    
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي الشركة ذات المسؤولية المحدودة؟</h3>
+                            <p class="faq-answer">هي من أكثر أنواع الشركات شيوعاً، وتتكون من شريك واحد أو أكثر، وتكون مسؤوليتهم محدودة بقدر حصصهم في رأس المال ولا تمتد لأموالهم الخاصة.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي شروط تأسيسها في نظام الشركات المحدث؟</h3>
+                            <p class="faq-answer">النظام الجديد أعفى الشركات من الحد الأدنى لرأس المال (إلا في أنشطة محددة)، واكتفى بإعداد عقد تأسيس موثق وإصدار السجل التجاري عبر منصة وزارة التجارة (مراس) بخطوات رقمية بسيطة.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> لماذا أحتاج لمحامي شركات عند التأسيس؟</h3>
+                            <p class="faq-answer">يساهم المحامي المتخصص في صياغة عقد التأسيس بما يحفظ حقوق الشركاء بدقة (توزيع الأرباح، آلية التخارج، الإدارة)، وتجنب وجود أي ثغرات قانونية قد تسبب نزاعات جوهرية مستقبلاً.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3: Litigation -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/litigation_law.png" alt="الدعاوى التجارية والمطالبات المالية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">المطالبات التجارية</span>
+                    <h2 class="article-title">كيف ترفع دعوى مطالبة مالية أمام المحكمة التجارية؟</h2>
+                    
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى تعتبر القضية "تجارية" وتقبلها المحكمة التجارية؟</h3>
+                            <p class="faq-answer">تختص المحاكم التجارية بمطالبات التجار المالية (إذا كانت لغرض تجاري)، وكذلك في المنازعات بين الشركاء في الشركات، والمنازعات المتعلقة بالعقود التجارية أو الأوراق التجارية، متى ما كانت النزاعات مرتبطة بالعمل التجاري.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو الإخطار (الإنذار) العدلي وهل هو إلزامي؟</h3>
+                            <p class="faq-answer">نعم، في المطالبات المالية التجارية، يشترط نظام المحاكم التجارية إخطار المدعى عليه كتابياً بأداء الحق قبل رفع الدعوى بمدة لا تقل عن 15 يوماً في حالات محددة، ويعتبر شرطاً أساسياً لقبول الدعوى.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يحق لي المطالبة بأتعاب المحاماة؟</h3>
+                            <p class="faq-answer">نعم، جرى العرف والعمل القضائي التجاري على إلزام الطرف الخاسر بدفع أتعاب المحاماة بشكل نسبي وفق ما يقدره القاضي بناءً على جهد المحامي المكتوب وسير الدعوى.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Article 4 -->
+            <article class="article-card scroll-reveal" style="margin-top: 50px;">
+                <img src="assets/images/articles/family_law_seo.png" alt="الخلع في قانون الأحوال الشخصية السعودي" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الأحوال الشخصية</span>
+                    <h2 class="article-title">كل ما تريد معرفته عن دعوى الخلع في السعودية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو الخلع وكيف يتم؟</h3>
+                            <p class="faq-answer">الخلع هو طلب الزوجة إنهاء العلاقة الزوجية مقابل إعادة المهر (العوض) للزوج. يتم بتراضي الطرفين أو عبر رفع دعوى فسخ نكاح بعوض أمام محكمة الأحوال الشخصية إذا رفض الزوج.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يحق للزوجة طلب الخلع دون سبب مقنع؟</h3>
+                            <p class="faq-answer">نعم، يحق للزوجة طلب الخلع إذا استحالت العشرة وبغضت البقاء مع الزوج حتى لو لم يكن هناك تقصير منه، بشرط إرجاع المهر وفقاً لنظام الأحوال الشخصية الجديد.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/family_law_seo.png" alt="חضانة الأطفال بعد الطلاق" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الأحوال الشخصية</span>
+                    <h2 class="article-title">حق الحضانة للأبناء بعد الطلاق: الشروط ولمن تؤول؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> لمن تكون الحضانة بعد الطلاق؟</h3>
+                            <p class="faq-answer">بحسب النظام، تكون الحضانة للأم في المقام الأول ما لم يثبت عدم أهليتها، ثم تؤول للأب، والهدف دائماً هو تحقيق "المصلحة الفضلى للمحضون".</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يخير الطفل بين والديه؟</h3>
+                            <p class="faq-answer">يُخير الطفل بين والديه عند بلوغه سن الخامسة عشرة، ويكون له حق تقرير من يعيش معه، بشرط توفر الأهلية في الحاضن المختار.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/real_estate_seo.png" alt="إخلاء العقار وإنهاء الإيجار" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضايا العقارية</span>
+                    <h2 class="article-title">الدليل الشامل لقضايا إخلاء العقار والمنازعات الإيجارية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يحق للمؤجر المطالبة بإخلاء العقار؟</h3>
+                            <p class="faq-answer">يحق له ذلك في حالة عدم سداد الأجرة (بعد إنذاره)، أو استخدام العقار في أنشطة غير مشروعة، أو تأجيره من الباطن دون إذن، أو التسبب بضرر بالغ للعقار.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما أهمية عقد "إيجار" الإلكتروني الموحد؟</h3>
+                            <p class="faq-answer">عقد إيجار يعتبر سنداً تنفيذياً؛ وهذا يعني أنه في حال عدم السداد أو التأخر، يمكن للمؤجر التوجه لمحكمة التنفيذ مباشرة بدلاً من رفع دعوى طويلة أمام المحكمة العامة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/real_estate_seo.png" alt="دعوى إثبات تملك عقار" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضايا العقارية</span>
+                    <h2 class="article-title">إثبات الملكية وتحديث الصكوك العقارية القديمة</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي منصة إحكام لتملك العقارات؟</h3>
+                            <p class="faq-answer">هي لجان النظر في طلبات تملك العقارات (إحكام)، وتختص باستقبال شكاوى وطلبات المواطنين لتثبيت ملكيتهم للعقارات التي لا تحمل صكوكاً رسمية وفق الضوابط.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ماذا أفعل إذا كان هناك نزاع على ملكية عقار؟</h3>
+                            <p class="faq-answer">يجب رفع دعوى "استحقاق عقار" أمام المحكمة العامة، مدعماً فيها الأدلة كوثائق المبايعة، الإحياء المستوفي للشروط، والشهود، ويفضل دائماً الاستعانة بمحامٍ عقاري مختص.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/cyber_crime_seo.png" alt="الابتزاز الإلكتروني في السعودية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الجرائم المعلوماتية</span>
+                    <h2 class="article-title">كيف تتعامل قانونياً مع قضايا الابتزاز الإلكتروني؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي عقوبة الابتزاز الإلكتروني في السعودية؟</h3>
+                            <p class="faq-answer">يُعاقب المبتز بالسجن لمدة تصل إلى سنة، وغرامة تصل إلى 500 ألف ريال، أو بإحدى هاتين العقوبتين، مع مصادرة الأجهزة المستخدمة.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ماذا أفعل إذا تعرضت للابتزاز؟</h3>
+                            <p class="faq-answer">تجنب قطعياً الاستجابة لطلبات المبتز. احتفظ بالأدلة (محادثات، رسائل) وبلغ فوراً عبر تطبيق (كلنا أمن) أو الاتصال بالجهات الأمنية، ووكل محامياً لضمان سريتك وحفظ حقك الخاص.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/cyber_crime_seo.png" alt="التشهير الإلكتروني" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الجرائم المعلوماتية</span>
+                    <h2 class="article-title">قضايا التشهير في مواقع التواصل الاجتماعي: عقوباتها وكيفية إثباتها</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يُعتبر المنشور تشهيراً وجريمة معلوماتية؟</h3>
+                            <p class="faq-answer">كل إنتاج أو إرسال أو إعداد من شأنه المساس بالنظام العام أو القيم أو الحياة الخاصة للآخرين بالتشهير أو الإساءة يعتبر جريمة تستوجب العقاب الرادع.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل الشتم في الواتساب يعتبر جريمة معلوماتية؟</h3>
+                            <p class="faq-answer">نعم، السب والشتم في الرسائل الخاصة عبر الإنترنت يصنف كجريمة معلوماتية وعقوبتها السجن مدة لا تزيد عن سنة وبغرامة لا تزيد عن 500 ألف ريال.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 10 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/admin_law_seo.png" alt="الاحتيال المالي" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الجرائم المعلوماتية والتجارية</span>
+                    <h2 class="article-title">استرداد الأموال بعد التعرض للاحتيال المالي والنصب</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف أسترد أموالي من قضايا الاحتيال المالي (الفوركس، المنصات الوهمية)؟</h3>
+                            <p class="faq-answer">يبدأ الإجراء بإبلاغ البنك لإيقاف التحويل، ثم تقديم بلاغ رسمي لدى الشرطة الجنائية. يقوم المحامي لاحقاً بمتابعة الدعوى وطلب الحجز على حسابات النصابين لاسترداد المبالغ بعد ثبوت الإدانة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 11 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/execution_law_seo.png" alt="محكمة التنفيذ والشيكات المرتجعة" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">محكمة التنفيذ</span>
+                    <h2 class="article-title">آلية تنفيذ الشيكات المرتجعة والسندات لأمر</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو السند التنفيذي؟</h3>
+                            <p class="faq-answer">السند التنفيذي هو الوثيقة التي تُعطى قوة التنفيذ المباشر جبراً مثل الأحكام القضائية، الشيكات، والسند لأمر، ولا يتم النظر موضوعياً في الدين بل يُلزم المدين بالدفع الفوري.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يتم إيقاف الخدمات ومنع السفر؟</h3>
+                            <p class="faq-answer">إذا تبلغ المدين بأمر التنفيذ ومضت مدة 5 أيام دون السداد أو الإفصاح عن أموال تكفي للسداد، يصدر قاضي التنفيذ قرارات الحجز وإيقاف الخدمات والمنع من السفر.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 12 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/inheritance_seo.png" alt="تقسيم الميراث والتركة" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">التركات والأوقاف</span>
+                    <h2 class="article-title">خطوات تقسيم التركة والميراث وإنهاء الإجراءات المعقدة</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف يتم تقسيم التركة عند امتناع أحد الورثة؟</h3>
+                            <p class="faq-answer">في حال النزاع المادي أو امتناع أحد الورثة، تُرفع "دعوى قسمة إجبار" في محكمة الأحوال الشخصية، حيث تحصر المحكمة الأموال وتبيع العقارات بالمزاد العلني وتقسمها قسمة شرعية إجبارية.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو دور المحامي في قضايا التركات؟</h3>
+                            <p class="faq-answer">المحامي يسهل استخراج صك حصر الورثة، وفك تجميد الحسابات البنكية، وتسريع إجراءات القسمة الرضائية دون الحاجة إلى الذهاب للمحاكم بشكل مطول، مما يحافظ على العلاقات الأسرية.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 13 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/inheritance_seo.png" alt="الوصايا والأوقاف" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">التركات والأوقاف</span>
+                    <h2 class="article-title">طريقة إثبات الوصية وتأسيس الأوقاف الشرعية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل تنفذ الوصية إذا كانت أكثر من الثلث؟</h3>
+                            <p class="faq-answer">شرعاً ونظاماً، لا تنفذ الوصية بأكثر من الثلث لغير الوارث إلا بإجازة جميع الورثة المعتبرين قانونياً بعد وفاة الموصي.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف يتم توثيق الوقف المالي والذرّي؟</h3>
+                            <p class="faq-answer">يتم ذلك من خلال كتابة عدل وإصدار صك وقفية، ويُنصح بشدة بصياغة شروط الواقف والنُظّار بمساندة محامي لتفادي النزاعات المعقدة في المستقبل بين الإخوة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 14 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/admin_law_seo.png" alt="ديوان المظالم والطعن" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضاء الإداري</span>
+                    <h2 class="article-title">رفع التظلمات والطعن في القرارات الإدارية (ديوان المظالم)</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هو اختصاص ديوان المظالم؟</h3>
+                            <p class="faq-answer">يختص ديوان المظالم (المحاكم الإدارية) بالنظر في الدعاوى المتعلقة بالحقوق المقررة في نظم الخدمة المدنية، والطعن في القرارات الحكومية، ودعاوى التعويض المرفوعة ضد جهات الدولة.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي المهل القانونية للتظلم الإداري؟</h3>
+                            <p class="faq-answer">يجب على المتضرر التظلم أمام الجهة الإدارية مصدرة القرار خلال 60 يوماً من تاريخ تبليغه، وإذا تم القبول أو الرفض أو التجاهل، له حق رفع الدعوى خلال 60 يوماً أخرى أمام الديوان، والمُدد هنا حاسمة جداً.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 15 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/admin_law_seo.png" alt="التعويض عن الضرر" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضاء الإداري</span>
+                    <h2 class="article-title">دعوى التعويض عن أضرار القرارات والمشاريع الحكومية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يمكن تعويضي بسبب مشروع حكومي أضر بعقاري؟</h3>
+                            <p class="faq-answer">نعم، إذا وقع نزع ملكية للعقار للمصلحة العامة، أو كان هناك ضرر مباشر غير معتاد بسبب المشاريع الحكومية، يحق لك المطالبة بالتعويض العادل أمام ديوان المظالم فور إثبات الضرر والخطأ.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 16 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/business_contract_seo.png" alt="صياغة العقود التجارية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">العقود التجارية</span>
+                    <h2 class="article-title">أهمية الصياغة القانونية الاحترافية للعقود التجارية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي عناصر العقد التجاري القوي؟</h3>
+                            <p class="faq-answer">يجب أن يتضمن العقد توصيفاً دقيقاً لالتزامات الأطراف، الشروط الجزائية، المحكمة المختصة أو التحكيم لحل النزاعات، قوانين القوة القاهرة، وآلية الفسخ.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> لماذا التوقيع على مسودة جاهزة من الإنترنت خطير؟</h3>
+                            <p class="faq-answer">المسودات الجاهزة لا تراعي الأنظمة المحدثة في السعودية ولا تدرس المخاطر الخاصة بنشاطك، وقد تجد نفسك تتحمل مبالغ ضخمة لمجرد افتقار العقد لبنود تنظيمية دقيقة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 17 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/commercial_law.png" alt="تصفية الشركات" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الشركات والأعمال</span>
+                    <h2 class="article-title">كيف تتم تصفية الشركات وإعلان الإفلاس نظامياً؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما الفرق بين التصفية الاختيارية والإفلاس؟</h3>
+                            <p class="faq-answer">التصفية الاختيارية يتخذها الشركاء باتفاقهم عند انتهاء أجل الشركة وإغلاقها بتسديد جميع ما عليها. أما الإفلاس، فيكون بحكم قضائي بعد تعثر الشركة وتراكم الديون عبر مسارات نظام الإفلاس الحديث كـ "التسوية الوقائية".</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل الشركاء مطالبون بديون الشركة؟</h3>
+                            <p class="faq-answer">في الشركة ذات المسؤولية المحدودة والشركات المساهمة، لا يُطالب الشركاء بالديون من أموالهم الخاصة، ولكن في شركة التضامن، فهم ضامنون للديون في أموالهم الخاصة.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 18 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/commercial_law.png" alt="العلامات التجارية" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الملكية الفكرية</span>
+                    <h2 class="article-title">حماية العلامات التجارية من السرقة والتقليد في السوق السعودي</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ماذا تفعل إذا تم تقليد علامتك التجارية؟</h3>
+                            <p class="faq-answer">يجب توثيق التقليد فوراً بشراء العينة، ثم التقدم بشكوى للجنة النظر في تظلمات العلامات التجارية أو لدى المحكمة التجارية للمطالبة بوقف التعدي وإتلاف المنتجات والتعويض المالي.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 19 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/labor_law.png" alt="مكافأة نهاية الخدمة" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">دعاوى عمالية</span>
+                    <h2 class="article-title">طريقة احتساب مكافأة نهاية الخدمة عند الاستقالة أو الإقالة</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> متى يسقط حق الموظف في مكافأة نهاية الخدمة؟</h3>
+                            <p class="faq-answer">لا يسقط حقه إطلاقاً إلا في حالات نادرة جداً ومحددة كحالة الاستقالة قبل إتمام سنتين في العمل، حيث لا يستحق أي مكافأة وفق نظام العمل.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> كيف تحسب المكافأة عند الاستقالة؟</h3>
+                            <p class="faq-answer">إذا كانت الخدمة بين سنتين و5 سنوات يستحق ثلث المكافأة، وإذا كانت بين 5 إلى 10 سنوات يستحق الثلثين، وما تجاوز 10 سنوات يستحقها كاملة (نصف شهر عن كل سنة من الخمس سنوات الأولى، وشهر كامل للمدة الباقية).</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 20 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/labor_law.png" alt="إصابات العمل" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">دعاوى عمالية</span>
+                    <h2 class="article-title">حقوق الموظف المادية ومعاش التعويض عند التعرض لإصابة عمل</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> من يتكفل بمصاريف العلاج في حال إصابة العمل؟</h3>
+                            <p class="faq-answer">يتكفل صاحب العمل بتقديم الإسعافات الأولية وتتكفل المؤسسة العامة للتأمينات الاجتماعية بمصاريف العلاج الطبي الكاملة لحين شفاء العامل المشترك.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل يحق لي رفع دعوى ضد الشركة لتعويض إضافي؟</h3>
+                            <p class="faq-answer">نعم، يحق لك المطالبة بالتعويض أمام المحكمة العمالية إذا ثبت أن الشركة تقاعست متعمّدة أو أهملت تطبيق وسائل السلامة المهنية مما أدى لإصابتك.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 21 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/family_law_seo.png" alt="دعوى طلاق للضرر" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">الأحوال الشخصية</span>
+                    <h2 class="article-title">فسخ النكاح للضرر: شروطه وإثباتاته في المحاكم</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> ما هي طرق إثبات الضرر الموجب للفسخ دون إرجاع المهر؟</h3>
+                            <p class="faq-answer">يُثبت الضرر (كالضرب، الهجر، سوء العشرة) بالتقارير الطبية، وشكاوى الشرطة، أو بشهادة الشهود. وفي حال إثبات الضرر يتم الفسخ للزوجة دون طلب إعادة المهر.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 22 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/execution_law_seo.png" alt="ديون الشركات والمؤسسات" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">المطالبات التجارية</span>
+                    <h2 class="article-title">تحصيل الديون التجارية المتأخرة للشركات: أسرع الطرق القانونية</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل سندات القبض تكفي لإثبات الدين ورفعه لمحكمة التنفيذ؟</h3>
+                            <p class="faq-answer">سند القبض يعتبر قرينة قوية في المحكمة (الموضوعية) وليس ورقة تجارية تنفيذية. الأوراق التي تذهب للتنفيذ المباشر هي: الشيكات، الكمبيالات، والسندات لأمر.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 23 -->
+            <article class="article-card scroll-reveal">
+                <img src="assets/images/articles/real_estate_seo.png" alt="الضريبة العقارية والتصرفات" class="article-image">
+                <div class="article-content">
+                    <span class="article-category">القضايا العقارية والضريبية</span>
+                    <h2 class="article-title">متى يتم الإعفاء من ضريبة التصرفات العقارية بين الأقارب؟</h2>
+                    <div class="faq-section">
+                        <div class="faq-item">
+                            <h3 class="faq-question"><i class="fas fa-question-circle"></i> هل الهبة للابن تخضع لضريبة التصرف العقاري 5%؟</h3>
+                            <p class="faq-answer">تُعفى ضريبة التصرفات العقارية في حالة "الهبة" بين الأقارب من الدرجة الأولى والثانية (أبناء، آباء، إخوة) بشرط إثبات ذلك وعدم وجود نية مسبقة للتهرب الضريبي عبر نقل الملكيات.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <img src="assets/images/logo.jpg?v=2" alt="العيد للمحاماة" style="max-height: 80px; width: auto; object-fit: contain; margin-bottom: 20px; filter: brightness(0) invert(1);">
+                <p>مكتب محاماة رائد وموثوق، نسعى لترسيخ العدالة وحفظ الحقوق عبر خدمات قانونية شاملة واحترافية.</p>
+                <div class="social-links">
+                    <a href="https://x.com/aleid100?s=21" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="index.html#home">الرئيسية</a></li>
+                    <li><a href="index.html#about">من نحن</a></li>
+                    <li><a href="index.html#services">الخدمات</a></li>
+                    <li><a href="articles.html" style="color: #d4af37;">المقالات <i class="fas fa-star fa-xs" style="color:#d4af37;"></i></a></li>
+                    <li><a href="index.html#partners">شركاء النجاح</a></li>
+                    <li><a href="index.html#office">بيئة العمل</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul class="footer-contact" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><i class="fas fa-phone gold-text" style="width: 20px;"></i> <a href="tel:0599959111" dir="ltr">0599959111</a></li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-envelope gold-text" style="width: 20px;"></i> <a href="mailto:abdulrhmanaleid11@gmail.com" style="font-size: 0.9rem;">abdulrhmanaleid11@gmail.com</a></li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt gold-text" style="width: 20px;"></i> <a href="https://maps.app.goo.gl/xuCKXvpAh6y3RxTX8?g_st=ic" target="_blank">موقع المكتب (Google Maps)</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>اعتماداتنا</h4>
+                <div class="footer-license">
+                    <a href="https://eservice.sba.gov.sa/directory/6736" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: block; margin-bottom: 10px;">
+                        <i class="fas fa-certificate gold-text"></i> معتمدين لدى هيئة المحامين
+                    </a>
+                    <div><i class="fas fa-scale-balanced gold-text"></i> معتمدين لدى وزارة العدل</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 العيد للمحاماة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/966599959111" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا على واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Local Script -->
+    <script src="js/script.js?v=12"></script>
+</body>
+</html>
